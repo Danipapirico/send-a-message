@@ -5,4 +5,8 @@ input.onButtonPressed(Button.A, function () {
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString)
 })
+input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
+    radio.sendNumber(5)
+})
 radio.setGroup(11)
