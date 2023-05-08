@@ -3,6 +3,6 @@ input.onButtonPressed(Button.A, function () {
     radio.sendString("smile")
 })
 radio.onReceivedString(function (receivedString) {
-    basic.showNumber(5)
+    basic.showString(receivedString)
 })
 radio.setGroup(11)
